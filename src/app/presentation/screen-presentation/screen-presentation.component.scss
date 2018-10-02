@@ -1,0 +1,88 @@
+@import "../../../styles/theme.colors.scss";
+
+div#screen {
+  text-align: center;
+  background-color: $dark;
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  font-family: 'Source Code Pro', monospace;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  span#password {
+    color: $light;
+    position: fixed;
+    bottom: 0px;
+    right: 35px;
+    font-size: 0.75em;
+    font-weight: 100;
+    color: $highlight;
+  }
+
+  i:hover {
+      opacity: 0.75;
+  }
+
+
+  h1 {
+    color: $light;
+    margin-bottom: -25px;
+    font-family: 'Anton';
+    font-size: 8em;
+
+    span {
+      display: block;
+      margin-bottom: -25px;
+      font-size: 0.87em;
+    }
+  }
+
+  >span {
+    display: block;
+    margin: 25px 0px;
+
+    i {
+      color: $light;
+      font-size: 2em;
+      margin: 0px 25px;
+      display: inline-block;
+      flex-grow: .25fr;
+    }
+  }
+
+  span.footer {
+    color: $light;
+    font-size: 0.75em;
+    display: block;
+    margin-top: 25px;
+
+    i {
+      font-size: 2em;
+      margin: 25px 10px;
+    }
+  }
+
+  ul {
+    margin: 0px auto;
+    padding: 0px;
+
+    li {
+      padding: 0px;
+      font-size: 0.75em;
+      line-height: 0.65em;
+      color: $light;
+      text-align: left;
+      margin-top: 10px;
+      list-style: none;
+
+      span {
+        color: $secondary;
+        margin-right: 5px;
+      }
+    }
+  }
+}
