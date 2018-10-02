@@ -164,14 +164,14 @@ var FooterComponent = /** @class */ (function () {
 /***/ "./src/app/presentation/screen-presentation/screen-presentation.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"screen\" (click)=\"password = ''\">\n  <h1>\n    <span>ABSOLUT</span>\n    HACKER\n  </h1>\n  <span>\n    <i class=\"fas fa-bug\" data-num=\"1\"></i>\n    <i class=\"fas fa-brain\" data-num=\"2\"></i>\n    <i class=\"fas fa-database\" data-num=\"3\"></i>\n    <i class=\"fas fa-envelope\" data-num=\"4\"></i>\n  </span>\n  <ul id=\"logs\">\n  </ul>\n  <span class=\"footer\">\n      Developed by @jadeallencook <br>\n      <i class=\"fab fa-angular\" data-num=\"5\"></i>\n      <i class=\"fab fa-html5\" data-num=\"6\"></i>\n      <i class=\"fab fa-css3-alt\" data-num=\"7\"></i>\n      <i class=\"fab fa-node-js\" data-num=\"8\"></i>\n    </span>\n    <span id=\"password\">{{ password }}</span>\n</div>\n"
+module.exports = "<div id=\"screen\">\n  <h1>\n    <span>ABSOLUT</span>\n    HACKER\n  </h1>\n  <span>\n    <i class=\"fas fa-bug\" data-num=\"1\"></i>\n    <i class=\"fas fa-brain\" data-num=\"2\"></i>\n    <i class=\"fas fa-database\" data-num=\"3\"></i>\n    <i class=\"fas fa-envelope\" data-num=\"4\"></i>\n  </span>\n  <ul id=\"logs\">\n  </ul>\n  <span class=\"footer\">\n      Developed by @jadeallencook <br>\n      <i class=\"fab fa-angular\" data-num=\"5\"></i>\n      <i class=\"fab fa-html5\" data-num=\"6\"></i>\n      <i class=\"fab fa-css3-alt\" data-num=\"7\"></i>\n      <i class=\"fab fa-node-js\" data-num=\"8\"></i>\n    </span>\n    <span id=\"password\">{{ password }}</span>\n</div>\n"
 
 /***/ }),
 
 /***/ "./src/app/presentation/screen-presentation/screen-presentation.component.scss":
 /***/ (function(module, exports) {
 
-module.exports = "div#screen {\n  text-align: center;\n  background-color: #000;\n  background-size: cover;\n  position: absolute;\n  height: 100%;\n  width: 100%;\n  font-family: 'Source Code Pro', monospace;\n  overflow: hidden;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center; }\n  div#screen span#password {\n    color: #fff;\n    position: fixed;\n    bottom: 0px;\n    right: 35px;\n    font-size: 0.75em;\n    font-weight: 100;\n    color: #2b53aa; }\n  div#screen i:hover {\n    opacity: 0.75; }\n  div#screen h1 {\n    color: #fff;\n    margin-bottom: -25px;\n    font-family: 'Anton';\n    font-size: 8em; }\n  div#screen h1 span {\n      display: block;\n      margin-bottom: -25px;\n      font-size: 0.87em; }\n  div#screen > span {\n    display: block;\n    margin: 25px 0px; }\n  div#screen > span i {\n      color: #fff;\n      font-size: 2em;\n      margin: 0px 25px;\n      display: inline-block;\n      -webkit-box-flex: .25fr;\n          -ms-flex-positive: .25fr;\n              flex-grow: .25fr; }\n  div#screen span.footer {\n    color: #fff;\n    font-size: 0.75em;\n    display: block;\n    margin-top: 25px; }\n  div#screen span.footer i {\n      font-size: 2em;\n      margin: 25px 10px; }\n  div#screen ul {\n    margin: 0px auto;\n    padding: 0px; }\n  div#screen ul li {\n      padding: 0px;\n      font-size: 0.75em;\n      line-height: 0.65em;\n      color: #fff;\n      text-align: left;\n      margin-top: 10px;\n      list-style: none; }\n  div#screen ul li span {\n        color: #419241;\n        margin-right: 5px; }\n"
+module.exports = "div#screen {\n  text-align: center;\n  background-color: #000;\n  background-size: cover;\n  position: absolute;\n  height: 100%;\n  width: 100%;\n  font-family: 'Source Code Pro', monospace;\n  overflow: hidden;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center; }\n  div#screen span#password {\n    color: #fff;\n    position: fixed;\n    bottom: 0px;\n    right: 35px;\n    font-size: 0.75em;\n    font-weight: 100;\n    color: #2b53aa; }\n  div#screen i:hover {\n    opacity: 0.75; }\n  div#screen h1 {\n    color: #fff;\n    margin-bottom: -25px;\n    font-family: 'Anton';\n    font-size: 8em; }\n  div#screen h1 span {\n      display: block;\n      margin-bottom: -25px;\n      font-size: 0.87em; }\n  div#screen > span {\n    display: block;\n    margin: 25px 0px; }\n  div#screen > span i {\n      color: #fff;\n      font-size: 2em;\n      margin: 0px 25px;\n      display: inline-block;\n      -webkit-box-flex: .25fr;\n          -ms-flex-positive: .25fr;\n              flex-grow: .25fr; }\n  div#screen span.footer {\n    color: #fff;\n    font-size: 0.75em;\n    display: block;\n    margin-top: 25px; }\n  div#screen span.footer i {\n      font-size: 2em;\n      margin: 25px 10px; }\n  div#screen ul {\n    margin: 0px auto;\n    padding: 0px; }\n  div#screen ul li {\n      padding: 0px;\n      font-size: 0.75em;\n      line-height: 0.65em;\n      color: #fff;\n      text-align: left;\n      margin-top: 10px;\n      list-style: none; }\n  div#screen ul li span {\n        color: #419241;\n        margin-right: 5px; }\n  @media only screen and (max-device-width: 480px) {\n  div#screen > * {\n    -webkit-transform: scale(0.95);\n            transform: scale(0.95); } }\n"
 
 /***/ }),
 
@@ -218,7 +218,7 @@ var ScreenPresentationComponent = /** @class */ (function () {
             document.getElementById('logs').innerHTML += log;
         }
         if (Math.round(Math.random() - 0.25)) {
-            screen.style.backgroundImage = 'url("/assets/static.gif")';
+            screen.style.backgroundImage = 'url("./assets/static.gif")';
         }
         else {
             screen.style.backgroundImage = 'none';
@@ -247,7 +247,7 @@ var ScreenPresentationComponent = /** @class */ (function () {
         for (var x = 0; x < this.max; x++) {
             this.log();
         }
-        __WEBPACK_IMPORTED_MODULE_1_jquery__('.fas, .fab').mouseenter(function (event) {
+        __WEBPACK_IMPORTED_MODULE_1_jquery__('.fas, .fab').click(function (event) {
             if (_this.password.length < 4) {
                 _this.password += event.target.getAttribute('data-num');
             }

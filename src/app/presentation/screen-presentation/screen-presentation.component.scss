@@ -24,7 +24,7 @@ div#screen {
   }
 
   i:hover {
-      opacity: 0.75;
+    opacity: 0.75;
   }
 
 
@@ -84,5 +84,11 @@ div#screen {
         margin-right: 5px;
       }
     }
+  }
+}
+
+@media only screen and (max-device-width: 480px) {
+  div#screen>* {
+    transform: scale(.95);
   }
 }

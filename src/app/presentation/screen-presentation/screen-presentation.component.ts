@@ -6,15 +6,14 @@ import * as $ from 'jquery';
   templateUrl: './screen-presentation.component.html',
   styleUrls: ['./screen-presentation.component.scss'],
 })
+
 export class ScreenPresentationComponent implements OnInit {
 
   max: number = 8;
   password: string = '';
   answer: string = '1337';
 
-  constructor() {
-  }
-
+  constructor() { }
 
   readwrite() {
     const available = 'rwx-'
@@ -40,7 +39,7 @@ export class ScreenPresentationComponent implements OnInit {
       document.getElementById('logs').innerHTML += log;
     }
     if (Math.round(Math.random() - 0.25)) {
-      screen.style.backgroundImage = 'url("/assets/static.gif")';
+      screen.style.backgroundImage = 'url("./assets/static.gif")';
     } else {
       screen.style.backgroundImage = 'none';
     }
@@ -71,9 +70,9 @@ export class ScreenPresentationComponent implements OnInit {
     for (var x = 0; x < this.max; x++) {
       this.log();
     }
-    $('.fas, .fab').mouseenter((event) => {
+    $('.fas, .fab').click((event) => {
       if (this.password.length < 4) {
-          this.password += event.target.getAttribute('data-num');
+        this.password += event.target.getAttribute('data-num');
       } else {
         this.password = '';
       }
